@@ -1,0 +1,32 @@
+:host {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: #E7E7E7;
+}
+
+.inner-content {
+  padding: 10rem 0;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery {
+    display: block;
+  }
+
+  .inner-content {
+    padding: 5rem 0;
+  }
+
+
+
+
+}

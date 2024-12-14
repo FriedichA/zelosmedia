@@ -1,0 +1,18 @@
+<app-page-headline [h1]="true" [text]="'Heilbronn SLUSH´D'"></app-page-headline>
+<div class="reference-container">
+  <div class="img-container">
+    <img src="https://picsum.photos/20">
+  </div>
+  <div class="content-container" *ngIf="reference">
+    <div class="reference-box">
+      <h2 *ngIf="reference[0].headline">{{reference[0].headline}}</h2>
+      <p *ngIf="reference[0].text">{{reference[0].text}}</p>
+    </div>
+    <div class="info-box">
+      <h3>{{reference[0].infobox.name}}</h3>
+      <p>{{reference[0].infobox.location}}</p>
+      <p>{{reference[0].infobox.duration}}</p>
+    </div>
+  </div>
+
+</div>

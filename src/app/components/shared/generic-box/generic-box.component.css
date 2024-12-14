@@ -1,0 +1,32 @@
+
+.item {
+  min-height: 15rem;
+  height: 100%;
+  background-color: #222;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+}
+
+.textbox {
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centers child elements horizontally */
+}
+
+
+.item h2 {
+  font-weight: 600;
+  margin-bottom: .5rem;
+  text-align: left;
+}
+
+.item p {
+  font-weight: 100;
+  text-align: left;
+  color: #222222;
+}
+
+

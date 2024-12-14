@@ -1,0 +1,8 @@
+<app-page-headline [h2]="true" [text]="'Mit Effizienz und Qualität zu Ihrer Lösung.'" [isTextCentered]="true"></app-page-headline>
+<div class="box-wrapper">
+  <div class="box-container" *ngFor="let item of itemArray">
+    <app-info-box [isService]="true" [isGrey]="false" [headline]="item.headline" [caption]="item.caption" [list]="item.list" [btnText]="'Mehr'"></app-info-box>
+  </div>
+</div>
+
+

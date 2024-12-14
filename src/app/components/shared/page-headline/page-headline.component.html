@@ -1,0 +1,8 @@
+
+  <div *ngIf="h1" class="headline">
+    <h1 [innerHTML]="text" [ngClass]="{'isDark': isDark}"a></h1>
+  </div>
+  <div *ngIf="h2" class="headline2">
+    <h2 [innerHTML]="text" [ngClass]="{'isDark': isDark}" [ngStyle]="{'text-align': isTextCentered ? 'center' : 'left'}"></h2>
+  </div>
+

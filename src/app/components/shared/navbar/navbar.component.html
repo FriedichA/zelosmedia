@@ -1,0 +1,40 @@
+
+  <nav class="navbar" id="navbar">
+    <div (click)="scrollTop()" class="navbar-logo" routerLink="/">
+      <div class="logo">
+       <img src="assets/images/zelos-logo.png">
+      </div>
+      <app-icon [icon]="'insta'"></app-icon>
+    </div>
+    <ul class="navbar-menu">
+      <li class="navbar-item">
+        <a (click)="navigateAndScroll('services')"  routerLinkActive="active"  class="navbar-link semibold">Leistungen</a>
+      </li>
+      <li class="navbar-item">
+        <a (click)="navigateAndScroll('references')" routerLinkActive="active"  class="navbar-link semibold">Referenzen</a>
+      </li>
+      <li class="navbar-item">
+        <a (click)="navigateAndScroll('aboutUs')" routerLinkActive="active" class="navbar-link semibold">Über uns</a>
+      </li>
+      <li class="navbar-item">
+        <a (click)="navigateAndScroll('contact')" class="navbar-link semibold" routerLinkActive="active">Kontakt</a>
+      </li>
+    </ul>
+    <img class="socials" src="../../../../assets/images/icons/insta.png">
+    <div class="navbar-burger" [ngClass]="{'is-active': isMenuActive}" (click)="toggleMenu()" (keydown)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+
+
+<div class="navbar-menu-mobile" [ngClass]="{'is-active': isMenuActive}">
+  <ul>
+    <li><a (click)="navigateAndScroll('services')" (click)="toggleMenu()">Leistungen</a></li>
+    <li><a (click)="navigateAndScroll('references')" (click)="toggleMenu()">Referenzen</a></li>
+    <li><a (click)="navigateAndScroll('aboutUs')" (click)="toggleMenu()">Über uns</a></li>
+    <li><a (click)="navigateAndScroll('contact')" (click)="toggleMenu()">Kontakt</a></li>
+  </ul>
+</div>

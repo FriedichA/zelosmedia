@@ -1,0 +1,13 @@
+
+
+
+<div class="inner-content">
+  <app-page-headline class="reference-headline" [h2]="true" [text]="'Referenzen'" [isDark]="true"></app-page-headline>
+  <div class="gallery" routerLink="/reference-detail">
+    <app-gallery class="reference" *ngFor="let item of itemsArray" [imgSrc]="item.imgSrc" [caption]="item.caption" [headline]="item.headline">
+    </app-gallery>
+  </div>
+</div>
+
+
+

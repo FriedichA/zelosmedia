@@ -1,0 +1,28 @@
+.custom-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .7rem 1rem;
+  min-width: 7rem;
+  background-color: #d3d3d3; /* Light gray color */
+  color: #222222;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 30px; /* Fully rounded edges */
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.is-big {
+  padding: .5rem 1rem;
+  font-size: 1.2rem;
+}
+
+.btn-text {
+  padding-top: 2px;
+}
+
+.custom-button:hover {
+  background-color: #a7a7a7; /* Slightly darker gray on hover */
+}

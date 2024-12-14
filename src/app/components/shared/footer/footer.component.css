@@ -1,0 +1,44 @@
+:host {
+  padding: 0 2rem;
+}
+@media screen and (max-width: 500px) {
+  :host {
+    padding: 0 1rem;
+  }
+}
+
+.footer {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.logo-container {
+  width: 10rem;
+  height: auto;
+  object-fit: contain;
+
+
+}
+
+.footer-links {
+  cursor: pointer;
+}
+
+.footer-link {
+  margin-right: 1rem;
+}
+
+.footer-links:first-child {
+  margin-right: 1rem;
+}
+
+.footer-link {
+  text-decoration: underline;
+}
+
+
+

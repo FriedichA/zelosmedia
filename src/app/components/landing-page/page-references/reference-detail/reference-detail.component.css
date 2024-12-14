@@ -1,0 +1,49 @@
+
+
+:host {
+  display: block;
+  justify-content: center;
+  align-items: center;
+
+
+
+.reference-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.img-container {
+  height: 60vh;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: -webkit-fill-available;
+  object-fit: cover;
+}
+}
+
+.reference-box {
+  width: 50%;
+}
+
+.info-box {
+  border: 1px solid #ffffff;
+  width: 40%;
+  padding: 1rem 4rem;
+}
+
+.info-box h3 {
+  font-weight: bold;
+}
+
+
+
+
+.content-container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}

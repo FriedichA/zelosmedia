@@ -1,0 +1,30 @@
+:host {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+app-navbar {
+  display: block;
+  width: 100%;
+}
+
+router-outlet {
+  display: block;
+  width: 100%;
+}
+
+app-footer {
+  width: 100%;
+}
+
+
+.margin-bottom > * {
+  margin-bottom: 5rem !important;
+}
+
+router-outlet {
+  flex: 1;
+}
+
+

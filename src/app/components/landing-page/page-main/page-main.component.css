@@ -1,0 +1,19 @@
+:host {
+  display: block;
+}
+
+
+app-page-headline::ng-deep .headline2 {
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  app-page-headline::ng-deep .headline2 {
+    margin-bottom: 2rem;
+  }
+}
+
+
+
+
+

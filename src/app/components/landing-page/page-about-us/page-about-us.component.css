@@ -1,0 +1,55 @@
+:host {
+  display: block;
+  align-items: center;
+  position: relative;
+}
+
+
+.row-1 {
+  display: flex;
+  height: auto;
+}
+
+
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .boxes {
+    display: block;
+  }
+  .boxes .box {
+    margin-bottom: 2rem;
+  }
+}
+
+
+.content-wrapper {
+  display: flex;
+  flex-grow: 1;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+app-page-headline::ng-deep h1  {
+}
+
+.button {
+  margin-top: auto;
+  right: 0;
+  margin-bottom: auto;
+}
+
+.subline {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}

@@ -1,0 +1,14 @@
+
+  <div class="gallery-item" [ngStyle]="{'background-color': imgSrc ? 'white' : '#393939'}">
+    <img *ngIf="imgSrc" [src]="imgSrc" alt="">
+    <div class="textbox">
+      <h2 *ngIf="!imgSrc">{{ headline }}</h2>
+      <h3 *ngIf="imgSrc && headline">{{ headline }}</h3>
+      <p *ngIf="caption" [ngStyle]="{'color': imgSrc ? '#222' : 'white'}">{{ caption }}</p>
+    </div>
+  </div>
+
+
+
+
+

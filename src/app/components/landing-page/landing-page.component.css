@@ -1,0 +1,44 @@
+:host > * {
+  margin-bottom: 13rem;
+  display: block;
+}
+
+:host > *:last-child {
+  margin-bottom: 3rem;
+}
+
+app-page-about-us {
+  padding: 0 10rem;
+}
+
+
+app-page-services {
+  padding: 0 10rem;
+}
+
+app-page-references {
+  padding: 0 10rem;
+}
+
+
+@media screen and (max-width: 1024px){
+  :host > * {
+    margin-bottom: 7rem;
+    display: block;
+  }
+
+  app-page-about-us {
+    padding: 0 2rem;
+  }
+
+  app-page-services {
+    padding: 0 2rem;
+  }
+
+  app-page-references {
+    padding: 0 2rem;
+  }
+
+}
+
+

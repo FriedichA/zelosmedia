@@ -1,0 +1,13 @@
+<div style="margin-bottom: 3rem">
+  <app-page-headline [h1]="true" [text]="'Team'"></app-page-headline>
+  <div class="profile-container">
+    <div class="profile-card" *ngFor="let item of team; let i = index">
+      <div class="profile-image">
+        <img [src]="item.imageSrc" alt="Profile Image of Philipp Seibel" />
+      </div>
+      <h3 *ngIf="team" [innerHTML]="item?.name"></h3>
+      <p class="profile-role">{{item.position}}</p>
+    </div>
+  </div>
+</div>
+

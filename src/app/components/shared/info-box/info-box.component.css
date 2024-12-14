@@ -1,0 +1,63 @@
+
+
+.box {
+  flex: 1 1 calc(33.333% - 1rem);
+  background: rgb(74,53,53);
+  background: linear-gradient(90deg, rgba(74,53,53,1) 0%, rgba(83,82,121,1) 100%);
+  text-align: center;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  min-height: 17rem;
+}
+
+@media screen and (max-width: 932px) {
+  .box {
+    min-height: 20rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.grey-bg {
+  background: #393939 !important;
+}
+
+.isService {
+  padding: 2rem 5rem;
+  min-height: 45rem;
+}
+
+@media screen and (max-width: 932px) {
+  .isService {
+    padding: 2rem 2rem;
+  }
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.grey-bg h1 {
+  text-align: left;
+}
+
+
+.grey-bg p {
+  text-align: left;
+}
+
+p {
+  margin-top: 3rem;
+}
+
+ul {
+  margin-top: 4rem;
+  text-align: left;
+}
+
+app-button::ng-deep button {
+  margin-top: 7rem;
+}
+
+
+
