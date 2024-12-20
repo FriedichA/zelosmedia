@@ -20,6 +20,6 @@ export class PageHeadlineComponent {
     @Input() h2: boolean | undefined;
     @Input() headline3: boolean | undefined;
 
-    @Input() isTextCentered: boolean | undefined;
+    @Input() isCentered: boolean | undefined;
     @Input() isIndented: boolean | undefined;
 }

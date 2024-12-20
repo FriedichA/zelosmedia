@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {NgIf, NgOptimizedImage} from "@angular/common";
 
 @Component({
@@ -11,22 +11,14 @@ import {NgIf, NgOptimizedImage} from "@angular/common";
   templateUrl: './icon.component.html',
   styleUrl: './icon.component.css'
 })
-export class IconComponent {
+export class IconComponent implements OnInit {
 
-  @Input() icon: string | undefined;
-  icons = {
-    insta: {
-      name: 'insta',
-      src: 'assets/icons/insta.png',
-    },
-    linkedin: {
-      name: 'linkedin',
-      src: 'assets/icons/linked.png',
-    },
-    email: {
-      name: 'email',
-      src: 'assets/icons/email.png',
-    },
-  };
+  @Input() iconName: string | undefined;
+
+  imgUrl: string | undefined;
+
+  ngOnInit(){
+    this.imgUrl = `assets/image/icons/${this.iconName}.png`;
+  }
 
 }

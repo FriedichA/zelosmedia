@@ -1,10 +1,10 @@
 .navbar {
   position: sticky;
   top: 0;
+  padding: 2rem 0;
   background-color: #222;
   opacity: 97%;
   backdrop-filter: blur(10px);
-  padding: 0 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +21,6 @@
 .navbar .navbar-menu {
   display: flex;
   list-style: none;
-  padding: 0 1rem 0 10rem;
   margin: 0;
 }
 .navbar .navbar-menu .navbar-item {
@@ -29,6 +28,13 @@
   cursor: pointer;
 }
 
+.social-media {
+  display: flex;
+}
+
+.social-media {
+  filter: invert(1);
+}
 .navbar .navbar-menu .navbar-item .navbar-link {
   font-size: 1.2rem;
   color: #e6e6e6;
@@ -61,10 +67,20 @@
   height: 2px;
   background-color: #e6e6e6;
 }
+
 .navbar .navbar-burger {
-  display: none;
+  display: block;
   cursor: pointer;
 }
+
+@media screen and (min-width: 1180px) {
+  .navbar .navbar-burger {
+    display: none;
+    cursor: pointer;
+  }
+}
+
+
 .navbar .navbar-burger span {
   display: block;
   width: 25px;
@@ -111,6 +127,8 @@
 }
 
 
+
+
 @media (max-width: 768px) {
   .socials {
     display: none;
@@ -128,6 +146,11 @@
   transform: translateX(-100%);
   transition: transform 0.3s ease-out;
 }
+
+.navbar-menu-mobile-wrapper ul li a {
+  cursor: pointer;
+}
+
 .navbar-menu-mobile.is-active {
   z-index: 100;
   position: absolute;

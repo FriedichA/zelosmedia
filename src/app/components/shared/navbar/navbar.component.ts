@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Output} from '@angular/core';
-import {NgClass} from "@angular/common";
+import {NgClass, NgIf} from "@angular/common";
 import {Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {ScrollService} from "../../../services/scroll.service";
 import {IconComponent} from "../icon/icon.component";
@@ -12,15 +12,27 @@ import {IconComponent} from "../icon/icon.component";
     NgClass,
     RouterLink,
     RouterLinkActive,
-    IconComponent
+    IconComponent,
+    NgIf
   ],
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
 
-  constructor(private router: Router, private scrollService: ScrollService) {
-  }
   isMenuActive = false;
+  width = window.innerWidth;
+  mobile = false;
+  tablet = false;
+
+  constructor(private router: Router, private scrollService: ScrollService) {
+    console.log(window.innerWidth);
+    if (this.width > 600) {
+      this.mobile = true;
+    } else if (this.width < 1180) {
+      this.tablet = true;
+    }
+  }
+
 
   toggleMenu() {
     this.isMenuActive = !this.isMenuActive;
@@ -28,13 +40,16 @@ export class NavbarComponent {
 
   @Output() navigate = new EventEmitter<string>();
 
+
   navigateAndScroll(id: string): void {
     if (this.router.url != '') {
-      this.router.navigate(['/'], { fragment: id });
+      this.router.navigate(['/'], {fragment: id});
       setTimeout(() => {
-        this.scrollService.scrollToElement(id)}, 500);
+        this.scrollService.scrollToElement(id)
+      }, 500);
     } else {
-      this.router.navigate(['/'], { fragment: id });
+      this.router.navigate(['/'], {fragment: id});
+      this.toggleMenu()
     }
 
     console.log(this.router.url)

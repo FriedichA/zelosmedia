@@ -15,23 +15,22 @@
 }
 
 .img-container {
-  height: 60vh;
+  height: 80vh;
   overflow: hidden;
 }
 
 .img-container img {
-  width: -webkit-fill-available;
+  width: 100%;
   object-fit: cover;
 }
 }
 
 .reference-box {
-  width: 50%;
+  width: 80%;
 }
 
 .info-box {
   border: 1px solid #ffffff;
-  width: 40%;
   padding: 1rem 4rem;
 }
 
@@ -43,7 +42,20 @@
 
 
 .content-container {
+  padding: 0 2rem;
   margin-top: 5rem;
   display: flex;
   justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1025px) {
+  .reference-box {
+    margin-bottom: 2rem;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
 }

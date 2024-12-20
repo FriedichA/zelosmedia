@@ -4,19 +4,24 @@
   position: relative;
 }
 
-
 .row-1 {
-  display: flex;
+  display: block;
   height: auto;
 }
-
 
 .boxes {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   flex-wrap: wrap;
+  align-items: stretch;
   justify-content: center;
+}
+
+.boxes .box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -27,12 +32,6 @@
   .boxes .box {
     margin-bottom: 2rem;
   }
-}
-
-
-.content-wrapper {
-  display: flex;
-  flex-grow: 1;
 }
 
 .footer {
@@ -51,5 +50,4 @@ app-page-headline::ng-deep h1  {
 .subline {
   margin-top: 2rem;
   margin-bottom: 2rem;
-
 }

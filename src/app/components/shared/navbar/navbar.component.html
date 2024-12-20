@@ -1,10 +1,10 @@
-
+<header>
   <nav class="navbar" id="navbar">
     <div (click)="scrollTop()" class="navbar-logo" routerLink="/">
       <div class="logo">
-       <img src="assets/images/zelos-logo.png">
+        <img src="assets/images/zelos-logo.png">
       </div>
-      <app-icon [icon]="'insta'"></app-icon>
+      <!--<app-icon [icon]="'insta'"></app-icon>-->
     </div>
     <ul class="navbar-menu">
       <li class="navbar-item">
@@ -20,21 +20,30 @@
         <a (click)="navigateAndScroll('contact')" class="navbar-link semibold" routerLinkActive="active">Kontakt</a>
       </li>
     </ul>
-    <img class="socials" src="../../../../assets/images/icons/insta.png">
-    <div class="navbar-burger" [ngClass]="{'is-active': isMenuActive}" (click)="toggleMenu()" (keydown)="toggleMenu()">
+    <div class="social-media" >
+      <img class="socials" src="../../../../assets/images/icons/icon-insta.png">
+      <img class="socials" src="../../../../assets/images/icons/icon-linkedin.png">
+    </div>
+    <div class="navbar-burger"[ngClass]="{'is-active': isMenuActive}" (click)="toggleMenu()" (keydown)="toggleMenu()">
       <span></span>
       <span></span>
       <span></span>
     </div>
   </nav>
+</header>
 
 
 
-<div class="navbar-menu-mobile" [ngClass]="{'is-active': isMenuActive}">
-  <ul>
-    <li><a (click)="navigateAndScroll('services')" (click)="toggleMenu()">Leistungen</a></li>
-    <li><a (click)="navigateAndScroll('references')" (click)="toggleMenu()">Referenzen</a></li>
-    <li><a (click)="navigateAndScroll('aboutUs')" (click)="toggleMenu()">Über uns</a></li>
-    <li><a (click)="navigateAndScroll('contact')" (click)="toggleMenu()">Kontakt</a></li>
+
+<div  class="navbar-menu-mobile" [ngClass]="{'is-active': isMenuActive}">
+  <ul class="navbar-menu-mobile-wrapper">
+    <li><a (click)="navigateAndScroll('services')">Leistungen</a></li>
+    <li><a (click)="navigateAndScroll('services')">Referenzen</a></li>
+    <li><a (click)="navigateAndScroll('services')">Über uns</a></li>
+    <li><a (click)="navigateAndScroll('services')">Kontakt</a></li>
+    <img class="socials" src="../../../../assets/images/icons/icon-insta.png">
+    <img class="socials" src="../../../../assets/images/icons/icon-linkedin.png">
   </ul>
 </div>
+
+

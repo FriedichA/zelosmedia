@@ -6,5 +6,10 @@
   width: 100%;
 }
 
+.email {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 

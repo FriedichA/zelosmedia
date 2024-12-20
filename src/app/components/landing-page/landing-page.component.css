@@ -8,16 +8,16 @@
 }
 
 app-page-about-us {
-  padding: 0 10rem;
+  padding: 0 20rem;
 }
 
 
 app-page-services {
-  padding: 0 10rem;
+  padding: 0 20rem;
 }
 
 app-page-references {
-  padding: 0 10rem;
+  padding: 0 20rem;
 }
 
 
@@ -40,5 +40,8 @@ app-page-references {
   }
 
 }
+
+
+
 
 
