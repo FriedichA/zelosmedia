@@ -133,6 +133,11 @@
   .socials {
     display: none;
   }
+  .socials-mobile {
+    filter: invert(1);
+
+    right: 0;
+  }
   .navbar .navbar-menu {
     display: none
   }

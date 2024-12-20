@@ -14,10 +14,18 @@
   flex-direction: column;
 }
 
-.img-container {
-  height: 80vh;
+@media screen and (max-width: 1000px) {
+  .img-container {
+    height: 20rem !important;
+  }
+}
+
+
+  .img-container {
+    height: 30rem;
   overflow: hidden;
 }
+
 
 .img-container img {
   width: 100%;
