@@ -1,9 +1,8 @@
 :host {
-  padding: 1.2rem 0;
   margin-top: 5rem;
 }
 
-app-page-headline
+app-page-headline::ng-deep
 
 .box-wrapper {
   display: flex;
@@ -15,7 +14,7 @@ app-page-headline
 
 .box-container {
   flex: 1 1 calc(33.33% - 18px); /* For 3 items per row */
-  min-width: 19rem; /* Ensures items don’t shrink too much */
+  min-width: 12rem; /* Ensures items don’t shrink too much */
 }
 
 /* Media Query for screens 1024px or smaller */

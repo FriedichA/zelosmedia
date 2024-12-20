@@ -3,6 +3,7 @@ import {NgClass, NgIf} from "@angular/common";
 import {Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {ScrollService} from "../../../services/scroll.service";
 import {IconComponent} from "../icon/icon.component";
+import {window} from "rxjs";
 
 @Component({
   selector: 'app-navbar',
@@ -20,13 +21,15 @@ import {IconComponent} from "../icon/icon.component";
 export class NavbarComponent {
 
   isMenuActive = false;
+  // @ts-ignore
   width = window.innerWidth;
   mobile = false;
   tablet = false;
 
   constructor(private router: Router, private scrollService: ScrollService) {
+    // @ts-ignore
     console.log(window.innerWidth);
-    if (this.width > 600) {
+    if (this.width < 600) {
       this.mobile = true;
     } else if (this.width < 1180) {
       this.tablet = true;
@@ -43,6 +46,7 @@ export class NavbarComponent {
 
   navigateAndScroll(id: string): void {
     if (this.router.url != '') {
+      // @ts-ignore
       this.router.navigate(['/'], {fragment: id});
       setTimeout(() => {
         this.scrollService.scrollToElement(id)
@@ -56,6 +60,7 @@ export class NavbarComponent {
   }
 
   scrollTop() {
+    // @ts-ignore
     window.scroll(0, 0);
   }
 }

@@ -3,6 +3,9 @@
 /* styles.scss */
 @import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300;400;500;600;700&display=swap');
 
+.full-width {
+  width: 100%;
+}
 
 
 body {

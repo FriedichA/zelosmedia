@@ -21,8 +21,12 @@
       </li>
     </ul>
     <div class="social-media" >
-      <img class="socials" src="../../../../assets/images/icons/icon-insta.png">
-      <img class="socials" src="../../../../assets/images/icons/icon-linkedin.png">
+      <a href="https://www.linkedin.com/company/zelos-media-gmbh/posts/?feedView=all">
+        <img class="socials" src="../../../../assets/images/icons/icon-linkedin.png">
+      </a>
+      <a href="https://www.instagram.com/zelos_media_gmbh/">
+        <img class="socials" src="../../../../assets/images/icons/icon-insta.png">
+      </a>
     </div>
     <div class="navbar-burger"[ngClass]="{'is-active': isMenuActive}" (click)="toggleMenu()" (keydown)="toggleMenu()">
       <span></span>
@@ -35,14 +39,15 @@
 
 
 
-<div  class="navbar-menu-mobile" [ngClass]="{'is-active': isMenuActive}">
+<div class="navbar-menu-mobile" [ngClass]="{'is-active': isMenuActive}">
   <ul class="navbar-menu-mobile-wrapper">
+    <img class="socials" src="../../../../assets/images/icons/icon-insta.png">
+    <img class="socials" src="../../../../assets/images/icons/icon-linkedin.png">
     <li><a (click)="navigateAndScroll('services')">Leistungen</a></li>
     <li><a (click)="navigateAndScroll('services')">Referenzen</a></li>
     <li><a (click)="navigateAndScroll('services')">Über uns</a></li>
     <li><a (click)="navigateAndScroll('services')">Kontakt</a></li>
-    <img class="socials" src="../../../../assets/images/icons/icon-insta.png">
-    <img class="socials" src="../../../../assets/images/icons/icon-linkedin.png">
+
   </ul>
 </div>
 

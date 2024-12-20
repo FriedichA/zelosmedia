@@ -45,6 +45,11 @@ export class TeamComponent {
       name: 'Hannah Hauge',
       imageSrc: 'assets/images/phillipp_seibel_pb 1.png',
       position: 'Back Office'
+    },
+    {
+      name: 'Jacy Herrmann',
+      imageSrc: 'assets/images/phillipp_seibel_pb 1.png',
+      position: 'Back Office'
     }
   ]
 }
